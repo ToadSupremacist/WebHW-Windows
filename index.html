@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Окна для вас</title>
+        <link rel="stylesheet" href="okna.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="static/okno.svg">
+    </head>
+    <body>
+        <header class="header">
+            <ul class="navbar">
+                <li>
+                    <div class="logo">
+                        <a href="#">
+                            <h1 class="h1 --visually-hidden">
+                                Заказ и монтаж окон от компании "Окна для вас"
+                            </h1>
+                        </a>
+                    </div>
+                </li>
+                <li class="navbar-tabs">
+                    <a href="#">Окна оптом</a>
+                </li>
+                <li class="navbar-tabs">
+                    <a href="#">Нестандартные окна</a>
+                </li>
+                <li class="navbar-tabs">
+                    <a href="#">Наши вакансии</a>
+                </li>
+                <li class="navbar-tabs">
+                    <a href="#">Условия оплаты</a>
+                </li>
+                <li class="navbar-tabs">
+                    <a href="#">Вопросы и ответы</a>
+                </li>
+            </ul>
+        </header>
+        <main class="main">
+            <section class="configure-section">
+                <h3>Подберите свое идеальное окно, доставим и установим за 3 дня!</h3>
+                <p class="configure-notes">Точная стоимость будет доступна после замера оконного проема. Замерщик приедет в удобное для вас время и бесплатно произведет замер. 
+                    <br>Секции нумеруются слева направо, с внутренней стороны стены. 
+                    <br>Если у Вас появились дополнительные вопросы, пожалуйста, перейдите по вкладке «Вопросы и ответы».
+                </p>
+                <div class="configure-div">
+                    <fieldset>
+                        <legend>Выберите количество секций:</legend>
+                        <div>
+                          <input class="sect-radio" type="radio" id="one" name="numsect" value="1" checked>
+                          <label for="one">Одна секция</label>
+                        </div>
+                        <div>
+                          <input class="sect-radio" type="radio" id="two" name="numsect" value="2">
+                          <label for="two">Две секции</label>
+                        </div>
+                        <div>
+                          <input class="sect-radio" type="radio" id="three" name="numsect" value="3">
+                          <label for="three">Три секции</label>
+                        </div>
+                        <div>
+                            <input class="sect-radio" type="radio" id="four" name="numsect" value="4">
+                            <label for="four">Четыре секции</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="type-select">
+                        <legend>Выберите тип створок:</legend>
+                        <div class="first-sect">
+                            <label for="first-sect">Для секции 1:</label>
+                            <select name="first-sect">
+                                <option value="1">Глухая</option>
+                                <option value="2">Поворотная</option>
+                                <option value="3">Поворотно-откидная</option>
+                            </select>
+                        </div>
+                        <div class="second-sect --visually-hidden">
+                            <label for="second-sect">Для секции 2:</label>
+                            <select name="second-sect">
+                                <option value="1">Глухая</option>
+                                <option value="2">Поворотная</option>
+                                <option value="3">Поворотно-откидная</option>
+                            </select>
+                        </div>
+                        <div class="third-sect --visually-hidden">
+                            <label for="third-sect">Для секции 3:</label>
+                            <select name="third-sect">
+                                <option value="1">Глухая</option>
+                                <option value="2">Поворотная</option>
+                                <option value="3">Поворотно-откидная</option>
+                            </select>
+                        </div>
+                        <div class="fourth-sect --visually-hidden">
+                            <label for="fourth-sect">Для секции 4:</label>
+                            <select name="fourth-sect">
+                                <option value="1">Глухая</option>
+                                <option value="2">Поворотная</option>
+                                <option value="3">Поворотно-откидная</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="type-select">
+                        <legend>Выберите стеклопакет:</legend>
+                        <select name="glass">
+                            <option value="1">Стандартный</option>
+                            <option value="2">Теплосберегающий</option>
+                            <option value="3">Солнцезащитный</option>
+                            <option value="4">Шумозащитный</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <button class="add-window">Добавить окно</button>
+                <div class="price-div"><p>Примерная стоимость: ХХХХХ</p></div>
+                <button class="order-btn">Оформить заказ</button>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+        <script src="okna.js"></script>
+    </body>
+</html>
